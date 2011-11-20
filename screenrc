@@ -2,6 +2,8 @@ hardstatus on
 hardstatus alwayslastline
 hardstatus string '%{= kG}[ %{G}%H %{g} %{r}%l%{= kG} ][%= %{=kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B}%Y-%m-%d %{W}%c %{g}]'
 
+shell -$SHELL
+
 #Default Screens
 screen -t shell0 0
 screen -t shell1 1
