@@ -31,3 +31,6 @@ set cmdheight=2
 " always show a status line
 au VimEnter * set laststatus=2
 set ruler
+" start pagescrolling in middle of the page
+set scrolloff=999
+
