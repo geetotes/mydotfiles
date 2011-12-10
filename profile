@@ -9,7 +9,11 @@ test -r /sw/bin/init.sh && . /sw/bin/init.sh
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
 export PATH=/Users/lee/.gem/ruby/1.8/bin:$PATH
-export TERM=linux
+
+#Ok maybe this isn't so pretty
+#export TERM=linux
+
+
 export SVN_EDITOR=vim
 
 alias dnsflush="sudo dscacheutil -flushcache"
