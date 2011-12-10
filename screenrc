@@ -5,8 +5,8 @@ termcapinfo xterm* ti@:te@
 shell -$SHELL
 
 #Default Screens
-screen -t shell0 0
-screen -t shell1 1
+screen  0
+screen  1
 screen -t apache_log 2 tail -F /opt/local/apache2/logs/error_log
 screen -t mysql_log 3 tail -F /var/log/mysql/mysqld.log
 screen -t cmus 4 cmus
