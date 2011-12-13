@@ -5,7 +5,7 @@ command ResetAutoIncrement %s/AUTO_INCREMENT=[0-9]*/AUTO_INCREMENT=1/g
 command RemoveAutoIncrement %s/AUTO_INCREMENT=[0-9]*//g
 
 "Tring out autosave
-set autowrite
+set autowriteall
 
 "Some buffer settings
 set wildchar=<Tab> wildmenu wildmode=full
@@ -16,6 +16,7 @@ set wildchar=<Tab> wildmenu wildmode=full
 set undolevels=100
 set nocompatible
 set autoindent
+set smartindent
 set expandtab
 set shiftwidth=2
 set softtabstop=2
@@ -33,4 +34,8 @@ au VimEnter * set laststatus=2
 set ruler
 " start pagescrolling in middle of the page
 set scrolloff=999
-
+" Add automatic parenthesis and brackets
+inoremap ( ()<Esc>i
+inoremap { {<CR>}<Esc>ko
+" Add automatic php tags
+inoremap <? <?php ?><Esc><Left>i
