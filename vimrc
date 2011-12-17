@@ -1,8 +1,14 @@
-:set number
-set term=ansi
+set number
+set term=linux
 syntax on
 command ResetAutoIncrement %s/AUTO_INCREMENT=[0-9]*/AUTO_INCREMENT=1/g
 command RemoveAutoIncrement %s/AUTO_INCREMENT=[0-9]*//g
+
+"Tring out autosave
+set autowriteall
+
+"Some buffer settings
+set wildchar=<Tab> wildmenu wildmode=full
 
 "Some nice settings from Michael Geddes
 
@@ -10,11 +16,13 @@ command RemoveAutoIncrement %s/AUTO_INCREMENT=[0-9]*//g
 set undolevels=100
 set nocompatible
 set autoindent
-set smarttab
+set smartindent
+set expandtab
+set shiftwidth=2
+set softtabstop=2
 " Allow backspace to back over lines
 set backspace=2
 set exrc
-set shiftwidth=4
 set tabstop=4
 set cino=t0
 "I like things quiet
@@ -24,3 +32,10 @@ set cmdheight=2
 " always show a status line
 au VimEnter * set laststatus=2
 set ruler
+" start pagescrolling in middle of the page
+set scrolloff=999
+" Add automatic parenthesis and brackets
+inoremap ( ()<Esc>i
+inoremap { {<CR>}<Esc>ko
+" Add automatic php tags
+inoremap <? <?php ?><Esc><Left>i
