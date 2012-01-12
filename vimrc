@@ -34,8 +34,21 @@ au VimEnter * set laststatus=2
 set ruler
 " start pagescrolling in middle of the page
 set scrolloff=999
+" detect filetypes
+filetype on
 " Add automatic parenthesis and brackets
-inoremap ( ()<Esc>i
-inoremap { {<CR>}<Esc>ko
+autocmd FileType php inoremap ( ()<Esc>i
+autocmd FileType php inoremap { {<CR>}<Esc>ko
 " Add automatic php tags
-inoremap <? <?php ?><Esc><Left>i
+autocmd FileType php inoremap <? <?php ?><Esc><Left>i
+"Add sudo saving ability
+cmap w!! %!sudo tee > /dev/null %
+"Moar colors
+"set t_Co_256
+" Add auto phpdoc generator
+source ~/.vim/php-doc.vim 
+inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i 
+nnoremap <C-P> :call PhpDocSingle()<CR> 
+vnoremap <C-P> :call PhpDocRange()<CR>
+" Check syntax with CTRL-L
+autocmd FileType php noremap <C-L> :!/opt/local/bin/php -l <CR>
