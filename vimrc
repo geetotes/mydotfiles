@@ -39,3 +39,6 @@ inoremap ( ()<Esc>i
 inoremap { {<CR>}<Esc>ko
 " Add automatic php tags
 inoremap <? <?php ?><Esc><Left>i
+
+"Man highlight search is annoying
+set nohlsearch
