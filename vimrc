@@ -39,7 +39,8 @@ filetype on
 " Add automatic parenthesis and brackets
 autocmd FileType php inoremap ( ()<Esc>i
 autocmd FileType php inoremap { {<CR>}<Esc>ko
-" Add automatic php tags
+"Man highlight search is annoying
+set nohlsearch
 autocmd FileType php inoremap <? <?php ?><Esc><Left>i
 "Add sudo saving ability
 cmap w!! %!sudo tee > /dev/null %
