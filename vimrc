@@ -52,3 +52,7 @@ nnoremap <C-P> :call PhpDocSingle()<CR>
 vnoremap <C-P> :call PhpDocRange()<CR>
 " Check syntax with CTRL-L
 autocmd FileType php noremap <C-L> :!/opt/local/bin/php -l <CR>
+" Does this make me a bad person?
+set nobackup
+set nowritebackup
+set noswapfile
