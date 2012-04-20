@@ -36,6 +36,8 @@ set ruler
 set scrolloff=999
 " detect filetypes
 filetype on
+" Indent filetype
+filetype indent on
 " Add automatic parenthesis and brackets
 autocmd FileType php inoremap ( ()<Esc>i
 autocmd FileType php inoremap { {<CR>}<Esc>ko
@@ -57,3 +59,4 @@ autocmd FileType php noremap <C-L> :!/opt/local/bin/php -l <CR>
 set nobackup
 set nowritebackup
 set noswapfile
+

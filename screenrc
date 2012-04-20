@@ -8,8 +8,10 @@ shell -$SHELL
 vbell on
 vbell_msg "   WUFF WUFF     "
 #Default Screens
-screen  0
-screen  1
+screen -t foo 0
+screen -t bar 1
+screen -t fizz 2
+screen -t buzz 3
 screen -t bag-and-tag 4
 screen -t deployment-zone 5
 screen -t mysql 6 mysql
