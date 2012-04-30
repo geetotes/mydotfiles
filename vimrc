@@ -38,6 +38,8 @@ set ruler
 set scrolloff=999
 " detect filetypes
 filetype on
+" Indent filetype
+filetype indent on
 " Add automatic parenthesis and brackets
 autocmd FileType php inoremap ( ()<Esc>i
 autocmd FileType php inoremap { {<CR>}<Esc>ko
@@ -55,3 +57,8 @@ cmap w!! %!sudo tee > /dev/null %
 "vnoremap <C-P> :call PhpDocRange()<CR>
 " Check syntax with CTRL-L
 autocmd FileType php noremap <C-L> :!/opt/local/bin/php -l <CR>
+" Does this make me a bad person?
+set nobackup
+set nowritebackup
+set noswapfile
+
