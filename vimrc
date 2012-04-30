@@ -10,6 +10,8 @@ set autowriteall
 "Some buffer settings
 set wildchar=<Tab> wildmenu wildmode=full
 
+"Goodbye dbtext plugin
+"let g:loaded_dbtext=0
 "Some nice settings from Michael Geddes
 
 " Smart tabbing / autoindenting
@@ -47,9 +49,9 @@ cmap w!! %!sudo tee > /dev/null %
 "Moar colors
 "set t_Co_256
 " Add auto phpdoc generator
-source ~/.vim/php-doc.vim 
-inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i 
-nnoremap <C-P> :call PhpDocSingle()<CR> 
-vnoremap <C-P> :call PhpDocRange()<CR>
+"source ~/.vim/php-doc.vim 
+"inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i 
+"nnoremap <C-P> :call PhpDocSingle()<CR> 
+"vnoremap <C-P> :call PhpDocRange()<CR>
 " Check syntax with CTRL-L
 autocmd FileType php noremap <C-L> :!/opt/local/bin/php -l <CR>
