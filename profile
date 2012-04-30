@@ -27,3 +27,9 @@ alias ls='ls -G'
 alias ls='ls -lahFG'
 alias sf='./symfony --color'
 alias svn='/opt/local/bin/svn'
+
+case "$TERM" in
+screen)
+  PROMPT_COMMAND='echo -ne "\033k$HOSTNAME\033\\"'
+  ;;
+esac
