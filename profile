@@ -23,13 +23,5 @@ alias mysqlstart='sudo /opt/local/bin/mysqld_safe5 &'
 alias mysqlstop='/opt/local/bin/mysqladmin5 -u root -p shutdown'
 alias mysql='/opt/local/bin/mysql5'
 alias siteupdate='/Users/lee/ee_bash/siteupdate'
-alias ls='ls -G'
-alias ls='ls -lahFG'
 alias sf='./symfony --color'
 alias svn='/opt/local/bin/svn'
-
-case "$TERM" in
-screen)
-  PROMPT_COMMAND='echo -ne "\033k$HOSTNAME\033\\"'
-  ;;
-esac
