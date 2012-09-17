@@ -1,0 +1,25 @@
+hardstatus on
+hardstatus alwayslastline
+hardstatus string '%{= kG}[ %{G}%H %{g} %{r}%l%{= kG} ][%= %{=kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B}%Y-%m-%d %{W}%c %{g}]'
+termcapinfo xterm* ti@:te@
+#shell -$SHELL
+
+#fuck beeping
+vbell on
+vbell_msg "   WUFF WUFF     "
+#Default Screens
+screen -t foo 0
+screen -t bar 1
+screen -t fizz 2
+screen -t buzz 3
+screen -t bag-and-tag 4
+screen -t deployment-zone 5
+screen -t mysql 6 mysql
+#screen -t apache_log 7 tail -F sudo /etc/httpd/log/error_log
+#screen -t mysql_log 8 tail -F sudo /var/log/mysql/mysqld.log
+screen -t irssi 8 irssi
+screen -t cmus 9 cmus
+
+#screen -t production 5 ssh dal-wh2
+
+#screen -t cmus 6 cmus
