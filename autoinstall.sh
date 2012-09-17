@@ -1,12 +1,5 @@
 #/bin/bash
 echo "Autoinstalling..."
-# TODO put a check for existing .bash_profile
-
-# TODO
-# Should loop through existing files in directory
-# and link extensioned files into ther approrate place
-# and directories get linked as well
-
 
 handleFile () {
 [ -f "$HOME/.$f" ] && unlink "$HOME/.$f" 
@@ -30,4 +23,5 @@ do
   handleDir
 done
 
-
+# reload bash settings
+source ~/.bash_profile
