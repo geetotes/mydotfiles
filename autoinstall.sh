@@ -1,5 +1,5 @@
 #/bin/bash
-echo -p "Autoinstalling..."
+echo "Autoinstalling..."
 # TODO put a check for existing .bash_profile
 
 # TODO
@@ -7,14 +7,14 @@ echo -p "Autoinstalling..."
 # and link extensioned files into ther approrate place
 # and directories get linked as well
 
-workDir=`PWD`
 
 handleFile () {
-[ -f "~/$f" ] && unlink -rf "~/$f" 
-ln -s "$PWD/$f" "~/.$f"
+[ -f "$HOME/.$f" ] && unlink "$HOME/.$f" 
+ln -s "$PWD/$f" "$HOME/.$f" 
+echo $PWD
 }
 
-for f in profile vimr screenrc
+for f in profile vimrc screenrc
 do
 handleFile
 done
