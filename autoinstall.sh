@@ -25,7 +25,7 @@ do
 done
 
 #check for these directories
-for d in streams vim
+for d in streams .vim
 do
   handleDir
 done
