@@ -7,3 +7,4 @@ There is also some helpful stuff relating to GNU Screen:
 * A helper script for overiding bash window titles
 
 To run the autoinstaller, just execute the script from the directory you check the repo out into
+
