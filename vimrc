@@ -87,3 +87,7 @@ highlight SpellLocal term=underline cterm=underline
 
 " " where it should get the dictionary files
 let g:spellfile_URL = 'http://ftp.vim.org/vim/runtime/spell'
+
+" " Adding jslint hinting from
+" https://github.com/hallettj/jslint.vim
+" filetype plugin on
