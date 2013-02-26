@@ -90,4 +90,10 @@ let g:spellfile_URL = 'http://ftp.vim.org/vim/runtime/spell'
 
 " " Adding jslint hinting from
 " https://github.com/hallettj/jslint.vim
-" filetype plugin on
+filetype plugin on
+"
+"
+" some linting from: https://github.com/scrooloose/syntastic
+" seems i really want linting to work 
+
+"call pathogen#infect()
