@@ -41,8 +41,8 @@ filetype on
 " Indent filetype
 filetype indent on
 " Add automatic parenthesis and brackets
-autocmd FileType php inoremap ( ()<Esc>i
-autocmd FileType php inoremap { {<CR>}<Esc>ko
+" autocmd FileType php inoremap ( ()<Esc>i
+" autocmd FileType php inoremap { {<CR>}<Esc>ko
 "Man highlight search is annoying
 set nohlsearch
 autocmd FileType php inoremap <? <?php ?><Esc><Left>i
@@ -96,4 +96,5 @@ filetype plugin on
 " some linting from: https://github.com/scrooloose/syntastic
 " seems i really want linting to work 
 
-"call pathogen#infect()
+call pathogen#infect()
+let syntastic_mode_map = { 'passive_filetypes': ['html'] }

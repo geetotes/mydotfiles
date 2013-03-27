@@ -1,5 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =5
 let g:netrw_dirhist_1='/var/www/sites/beta/sites/all/themes/vault/sass'
 let g:netrw_dirhist_2='/var/www/sites/beta/configs/_nav_menu_items'
 let g:netrw_dirhist_3='/var/www/sites/beta/sites/all/themes/vault'
+let g:netrw_dirhist_4='/var/www/sites/beta/sites/all/modules/bypass'
+let g:netrw_dirhist_5='/var/www/sites/beta/sites/all/modules/rate/templates/thumbs-up-down'
