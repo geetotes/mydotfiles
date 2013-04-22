@@ -93,8 +93,10 @@ let g:spellfile_URL = 'http://ftp.vim.org/vim/runtime/spell'
 filetype plugin on
 "
 "
-" some linting from: https://github.com/scrooloose/syntastic
-" seems i really want linting to work 
-
+" syntastic is the best
 call pathogen#infect()
 let syntastic_mode_map = { 'passive_filetypes': ['html'] }
+
+" make sure weird ruby jst templates show up as html
+au BufReadPost *.ejs set syntax=html
+au BufReadPost *.ejs set filetype=html
